@@ -1,0 +1,4 @@
+dfcopy = df.copy()
+country = dfcopy['Gold'].idxmax()
+
+print(country)
