@@ -1,0 +1,2 @@
+copy2 = census_df.groupby('STNAME')['CENSUS2010POP'].nlargest(3)
+list = copy2.sum(level = 'STNAME').nlargest(3).index
