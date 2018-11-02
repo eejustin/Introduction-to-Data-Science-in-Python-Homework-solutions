@@ -1,0 +1,6 @@
+copy3 = census_df[census_df.columns[9:15]]
+copy3['largest'] = copy3.max(axis = 1)
+copy3['min'] = copy3.min(axis = 1)
+copy3['diff_ratio'] = copy3['largest']-copy3['min']
+entry = copy3.sort_values(by='diff_ratio', ascending= False)
+census_df.iloc[entry.head(1).index]['CTYNAME']
