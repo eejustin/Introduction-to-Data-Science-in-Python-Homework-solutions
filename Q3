@@ -1,0 +1,3 @@
+dfcopy['diff_ratio'] = dfcopy['diff']/df['Combined total']
+country = dfcopy['diff_ratio'].idxmax()
+country
