@@ -1,0 +1,2 @@
+dfcopy['diff'] = dfcopy['Gold']-dfcopy['Gold.1']
+dfcopy['diff'].idxmax()
