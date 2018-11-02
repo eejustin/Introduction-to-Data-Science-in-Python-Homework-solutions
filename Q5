@@ -1,0 +1,3 @@
+copy=census_df.set_index(['STNAME', 'CTYNAME'])
+count = copy.count(level = 'STNAME')
+count['COUNTY'].idxmax()
