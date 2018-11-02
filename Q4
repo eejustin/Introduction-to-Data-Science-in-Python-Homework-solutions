@@ -1,0 +1,2 @@
+dfcopy['Points'] = dfcopy['Gold.2']*3 + dfcopy['Silver.2']*2 + dfcopy['Bronze.2']
+print(dfcopy['Points'])
